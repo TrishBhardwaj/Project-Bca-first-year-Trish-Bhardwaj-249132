@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Bedside Table - Furniture Co.</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .bedside-table-image {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-control {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .btn {
+            width: 100%;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: #555;
+        }
+        .price {
+            text-align: center;
+            font-size: 24px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Order Your Bedside Table</h2>
+    <img src="data:image/jpeg;base64,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" alt="Bedside Table" class="bedside-table-image"> <!-- Replace with actual image URL -->
+    <div class="price">$199.99</div>
+    <form id="order-form">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="address">Shipping Address:</label>
+            <input type="text" id="address" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" class="form-control" min="1" value="1" required>
+        </div>
+        <button type="submit" class="btn">Place Order</button>
+    </form>
+</div>
+
+<script>
+    document.getElementById('order-form').addEventListener('submit', function(e) {
+        e.preventDefault(); // Prevent form submission
+
+        // Gather form data
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const address = document.getElementById('address').value;
+        const quantity = document.getElementById('quantity').value;
+
+        // Here you can add your logic to handle the order submission (e.g., API call)
+        console.log("Order Details:", {
+            name: name,
+            email: email,
+            address: address,
+            quantity: quantity
+        });
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Stylish Chair - Furniture Co.</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .chair-image {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-control {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .btn {
+            width: 100%;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: #555;
+        }
+        .price {
+            text-align: center;
+            font-size: 24px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Order Your Stylish Chair</h2>
+    <img src="https://media.istockphoto.com/id/505973586/photo/grey-armchair-isolated.webp?a=1&b=1&s=612x612&w=0&k=20&c=ObTsEUQxPj2DwyDidnmnoT1jBgoId23H5r1JT_eYdoY=" alt="Chair">
+    <h2>Stylish Chair</h2> <!-- Replace with actual image URL -->
+    <div class="price">$99.99</div>
+    <form id="order-form">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="address">Shipping Address:</label>
+            <input type="text" id="address" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" class="form-control" min="1" value="1" required>
+        </div>
+        <button type="submit" class="btn">Place Order</button>
+    </form>
+</div>
+
+<script>
+    document.getElementById('order-form').addEventListener('submit', function(e) {
+        e.preventDefault(); // Prevent form submission
+
+        // Gather form data
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const address = document.getElementById('address').value;
+        const quantity = document.getElementById('quantity').value;
+
+        // Here you can add your logic to handle the order submission (e.g., API call)
+        console.log("Order Details:", {
+            name: name,
+            email: email,
+            address: address,
+            quantity: quantity
+        });
+    });
+</script>
+
+</body>
+</html>
